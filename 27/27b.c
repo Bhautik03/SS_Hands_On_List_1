@@ -20,7 +20,7 @@ int main() {
     char *envp[] = { "PATH=/bin", NULL };
 
     printf("Using execle:\n");
-    execle("/bin/ls", "ls", "-Rl", (char *)NULL, envp);
+    execle("/bin/ls", "ls", "-Rl", NULL, envp);
 
     perror("execle failed");
     return 1;
