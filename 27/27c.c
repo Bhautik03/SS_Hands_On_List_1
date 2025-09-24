@@ -18,7 +18,7 @@ Date: 7 Sept, 2025.
 
 int main() {
     printf("Using execlp:\n");
-    execlp("ls", "ls", "-Rl", (char *)NULL);
+    execlp("ls", "ls", "-Rl", NULL);
 
     perror("execlp failed");
     return 1;
