@@ -17,7 +17,7 @@ Date: 7 Sept, 2025.
 
 int main() {
     printf("Using execl:\n");
-    execl("/bin/ls", "ls", "-Rl", (char *)NULL);
+    execl("/bin/ls", "ls", "-Rl", NULL);
 
     perror("execl failed");
     return 0;
